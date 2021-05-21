@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 
 const loadPeople = async (page) => {
-  const res = await fetch(`https://swapi.dev/api/people/?page=${page}`)
+  const res = await fetch(`https://swapi.dev/api/people/?page=${page}`) // eslint-disable-line
   return res.json()
 }
 
